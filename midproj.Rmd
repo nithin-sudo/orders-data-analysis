@@ -1,0 +1,24 @@
+---
+title: "BIS581v"
+output: html_notebook
+---
+
+BIS 581v Mid project. You have three data sets: central, western and eastern region.  You may need to edit the code below for the path to the files.
+
+```{r}
+library(tidyr)
+library(tidyverse)
+#load from CSV
+centralData <- read.csv("Orders_Central.csv", header=TRUE)
+westData <- read.csv("orders_west.csv", header=TRUE)
+eastData <- read.delim("Orders_East.txt", header=TRUE, sep='\t')
+```
+For this assignment, answer the following questions, but please note: the data may or may not be setup such that you can just answer. You may need to perform some "data wrangling" before you can answer. Include the code you use for any wrangling/EDA in your submission. Also include the code you use to answer each question along with text indicating what the answer is. You must provide proof of your answer by showing your R code. You may use online resources and talk to others, but what you submit must be your own work.
+
+
+which region, on average, ships products faster:
+Which products ship slowest by region:
+Plot time to ship by category, by year.
+which categories have highest profit by region, chain-wide?
+which segments have the lowest profit by region?
+What are yearly sales by region?
